@@ -9,6 +9,10 @@ using namespace std;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
+/**
+ * 这题初级的没啥讲究，数据给一堆，但是只要保证下落速度不大于40m/s就行
+ * .
+ **/
 
 int main()
 {
