@@ -9,7 +9,15 @@ using namespace std;
  * ---
  * Hint: You can use the debug stream to print initialTX and initialTY, if Thor seems not follow your orders.
  **/
-
+/**
+ *屏幕坐标的位移计算
+ *屏幕坐标左上（lefttop）为（0，0） 右下（rightbottom）为最大（max，max）
+ *将a（initialTX，initialTY）移动到b（lightX，lightY）
+ *计算它们两点的差 lightX-initialTX（重点减去起始点）
+ *横坐标差x1如果大于0，则往右移动，小于则往左移动
+ *纵坐标差y1如果大于0，则向下移动，小于则向上移动
+ *绝对值abs是移动的距离
+ **/
 int main()
 {
     int lightX; // the X position of the light of power
@@ -53,13 +61,5 @@ int main()
        
     }
 }
-/**
- *屏幕坐标的位移计算
- *屏幕坐标左上（lefttop）为（0，0） 右下（rightbottom）为最大（max，max）
- *将a（initialTX，initialTY）移动到b（lightX，lightY）
- *计算它们两点的差 lightX-initialTX（重点减去起始点）
- *横坐标差x1如果大于0，则往右移动，小于则往左移动
- *纵坐标差y1如果大于0，则向下移动，小于则向上移动
- *绝对值abs是移动的距离
- **/
+
  
